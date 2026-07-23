@@ -1,0 +1,27 @@
+name: C++ CI Build
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Compile C++ Code
+      run: g++ main.cpp operations.cpp -o memory_cli
+
+    - name: Verify Build
+      run: |
+        if [ -f "./memory_cli" ]; then
+          echo "Derleme basarili, executable dosya olusturuldu."
+        else
+          echo "Derleme basarisiz!"
+          exit 1
+        fi
