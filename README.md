@@ -2,6 +2,7 @@
 
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
+![Build Status](https://github.com/iemirakman/cpp-memory-management-cli/actions/workflows/build.yml/badge.svg)
 
 ## Overview
 A modular Command Line Interface (CLI) application built in C++ to demonstrate core computer science concepts: dynamic memory allocation, strict pointer manipulation, and system-level resource management. 
