@@ -60,7 +60,7 @@ int main() {
                 if (fact != -1) {
                     cout << "[SONUC] " << n << "! = " << fact << endl;
                 } else {
-                    cout << "[HATA] Negatif sayilarin faktoriyeli hesaplanamaz." << endl;
+                    cout << "[HATA] Girdi negatif veya faktoriyel sonucu long long turune sigmiyor." << endl;
                 }
                 break;
             }

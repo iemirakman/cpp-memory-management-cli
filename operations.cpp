@@ -1,5 +1,6 @@
 #include "operations.h"
 #include <iostream>
+#include <limits>
 
 using namespace std;
 
@@ -10,6 +11,7 @@ long long calculateFactorial(int n) {
     
     long long result = 1;
     for (int i = 2; i <= n; ++i) {
+        if (result > numeric_limits<long long>::max() / i) return -1;
         result *= i;
     }
     return result;
